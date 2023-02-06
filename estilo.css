@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  height: 100vh;
+}
+
+.titulo {
+  font-family: 'Cyberpunk';
+  font-size: 48px;
+  text-align: center;
+  color: transparent;
+  text-shadow: 1px 1px #333;
+  animation: titulo-animado 2s linear infinite;
+}
+
+@keyframes titulo-animado {
+  0% {
+    color: #ffff00;
+  }
+  25% {
+    color: #00ff00;
+  }
+  50% {
+    color: #00ffff;
+  }
+  75% {
+    color: #0000ff;
+  }
+  100% {
+    color: #ff00ff;
+  }
+}
+
+.imagem {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border: 10px solid #7affad;
+  border-radius: 20px;
+  box-shadow: 1px 1px #333;
+  animation: neon 2s ease-in-out infinite;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 10px solid transparent;
+  animation: borda-animada 2s linear infinite;
+}
+
+a.minha-rede-social {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes borda-animada {
+  0% {
+    border-color: #ffff00;
+  }
+  25% {
+    border-color: #00ff00;
+  }
+  50% {
+    border-color: #00ffff;
+  }
+  75% {
+    border-color: #0000ff;
+  }
+  100% {
+    border-color: #ff00ff;
+  }
+}
